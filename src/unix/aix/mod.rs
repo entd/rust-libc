@@ -2986,7 +2986,7 @@ extern "C" {
     pub fn if_freenameindex(ptr: *mut if_nameindex);
     pub fn if_nameindex() -> *mut if_nameindex;
     pub fn initgroups(name: *const c_char, basegid: crate::gid_t) -> c_int;
-    pub fn ioctl(fildes: c_int, request: c_int, ...) -> c_int;
+    pub fn ioctl(fildes: c_int, request: c_long, ...) -> c_int;
     pub fn jrand48(xseed: *mut c_ushort) -> c_long;
     pub fn lcong48(p: *mut c_ushort);
     pub fn lfind(
